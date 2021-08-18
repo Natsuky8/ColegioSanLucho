@@ -1,0 +1,16 @@
+<h1>Registrar Estudiante</h1>
+<br><br>
+<form  (ngSubmit)="formularioEnviado()">
+
+   <input type="text" name='nombre' placeholder="Nombre del Estudiante" (ngModel)="estudianteModel.nombre">
+    <br><br>
+    <input type="number" name="id" placeholder="Numero de Identidad" (ngModel)="estudianteModel.id">
+    <br><br>
+    <input type="text" name="materia" placeholder="Asignatura" (ngModel)="estudianteModel.materia">
+    <br><br>
+    <input type="number" name="semestre1" placeholder="Nota 1" (ngModel)="estudianteModel.semestre1">
+    <br><br>
+    <input type="number" name="semestre2" placeholder="Nota 2" (ngModel)="estudianteModel.semestre2">
+    
+    <button type="submit">Guardar</button>
+</form>

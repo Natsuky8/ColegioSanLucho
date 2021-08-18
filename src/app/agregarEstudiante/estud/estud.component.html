@@ -1,0 +1,39 @@
+<h2>Agregar Estudiante <mat-icon> person_add_alt_1 </mat-icon>
+</h2>
+<form (ngSubmit)="onSubmit()" formEstudiante="ngForm" Formulario01="ngForm">
+    <p>
+
+        <mat-form-field>
+            <mat-lebel></mat-lebel>
+            <input matInput name="nombre" [(ngModel)]="estudianteModel.nombre" type="text" placeholder="Nombre y Apellido">
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field>
+        
+            <input matInput name="id" [(ngModel)]="estudianteModel.id" type="number" placeholder="Numero de identidad">
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field>
+            <input matInput name="materia" [(ngModel)]="estudianteModel.materia" type="text"
+                placeholder="Asignatura">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name="semestre1" [(ngModel)]="estudianteModel.semestre1" type="number" placeholder="Nota 1">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name="semestre2" [(ngModel)]
+            ="estudianteModel.semestre2" type="number" placeholder="Nota 2">
+        </mat-form-field>
+    </p>
+    <p>
+        <button type="submit" mat-flat-button color="accent">Guardar</button>
+    </p>
+</form>
